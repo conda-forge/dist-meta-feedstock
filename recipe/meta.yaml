@@ -1,5 +1,5 @@
 {% set name = "dist-meta" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dist-meta-{{ version }}.tar.gz
-  sha256: 2be2ac8a925d56be1a68ff0bc5d339d44693b43906929a77b8aa3200d0238f5c
+  sha256: 72b4a7ad548dbeba4042cae15ba842893597f9ce10232bce1c5986350a6c91ab
 
 build:
   noarch: python
