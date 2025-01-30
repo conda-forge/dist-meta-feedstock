@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - domdf-python-tools >=3.1.0
     - handy-archives >=0.1.0
