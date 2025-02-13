@@ -1,18 +1,18 @@
 {% set name = "dist-meta" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dist-meta-{{ version }}.tar.gz
-  sha256: e73b873b08361835e25592d4d74129f0353bca4451dd12bfa10aaf14af4682e4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: fa16ebd5574744a09596ab342083a11d7209d8d05cf32891d1c985be7ec0cbd7
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
